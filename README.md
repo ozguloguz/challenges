@@ -6,6 +6,7 @@
     Your first task is to improve the existing elevator management algorithm to achieve the following goals:
     
         1. Decrease the average amount of time people has to wait for the elevator.
+		2. Decrease the average amount of extra time people has to spend to reach their target floors.
         2. Decrease the total energy expenditure of the elevator.
         
     You have been given the following facts:
@@ -37,11 +38,11 @@
         Travelling between two floors: 5 units of energy
 
     The performance of your algorithm will be calculated based on the following key performance indicators:
-	 
-	    1. Average Elevator Wait Time: The average number of cycles people had to wait for the elevator to take them
-		2. Average Extended Travel Time On Board: The average number of extra cycles people spent in the elevator to reach their destination floor,
+	    
+        1. Average Elevator Wait Time: The average number of cycles people had to wait for the elevator to take them
+        2. Average Extended Travel Time On Board: The average number of extra cycles people spent in the elevator to reach their destination floor,
 		   which is calculated as: Total Cycles in Elevator - ABS(Target Floor - Start Floor)
-		3. Energy Expenditure: The total energy expenditure of the elevator (for which the quantities are detailed above)
+        3. Energy Expenditure: The total energy expenditure of the elevator (for which the quantities are detailed above)
 	
 	There are some complaints reported by residents living in buildings fitted with our elevators. These must certainly be fixed:
 
@@ -53,8 +54,8 @@
 		   It changes direction like a roller coaster!"
 		   Muhammet Emin Tekin - 30 - Composer
 
-        3. "We three go on at 7th floor and pressed 3, 2 and 1. The elevator went to the first floor first.
-		   So.. First things first? Is that it?"
+        3. "We three got on at 7th floor and pressed buttons for floors 3, 2 and 1.
+		   The elevator went to the first floor first. So.. First things first? Is that it?"
 		   Berkant Gokdemir - 30 - Football Player - Manchester United FC
 		   
 		4. "I rather use the stairs. It's good for my health."
