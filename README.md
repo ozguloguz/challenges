@@ -6,8 +6,8 @@
     Your first task is to improve the existing elevator management algorithm to achieve the following goals:
     
         1. Decrease the average amount of time people has to wait for the elevator.
-		2. Decrease the average amount of extra time people has to spend to reach their target floors.
-        2. Decrease the total energy expenditure of the elevator.
+        2. Decrease the average amount of extra time people has to spend to reach their target floors.
+        3. Decrease the total energy expenditure of the elevator.
         
     You have been given the following facts:
     
@@ -50,7 +50,7 @@
 		   But it was going down and I was also waiting to go down! Ühü!"
 		   Emre Kantar - 30 - Businessman (Generally busy or else in a meeting)
 
-		2. "I keep a book with me at all times so that I can read a significant amount of pages while waiting for your elevator.
+        2. "I keep a book with me at all times so that I can read a significant amount of pages while waiting for your elevator.
 		   It changes direction like a roller coaster!"
 		   Muhammet Emin Tekin - 30 - Composer
 
@@ -58,13 +58,13 @@
 		   The elevator went to the first floor first. So.. First things first? Is that it?"
 		   Berkant Gokdemir - 30 - Football Player - Manchester United FC
 		   
-		4. "I rather use the stairs. It's good for my health."
+        4. "I rather use the stairs. It's good for my health."
 		   Ozan Yarci - 34 - Linguist
 		   
-		5. "Let me tell you this: I will not pay the next electricity bill. You will!"
+        5. "Let me tell you this: I will not pay the next electricity bill. You will!"
 		   Damla Firat - 25 - Landlord
 		   
-		7. "Someone complained about waiting too much for the elevator to come. I was also thinking the same thing." 
+        6. "Someone complained about waiting too much for the elevator to come. I was also thinking the same thing." 
 		   Ali Kaan Koc - 30 - ThinkTank
 	
     You will find the current algorithm in the DefaultAlgorithm.cs class.
