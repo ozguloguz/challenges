@@ -78,6 +78,20 @@
     Good luck.
     
     
+	NOTES:
+	
+	The OzgulOguz.ChallengeRunner executable runs in three modes:
+	
+        1. --run: Competition mode. Your algorithm is executed for 1M cycles and the results are reported
+		2. --rnd: Random mode (With UI support). You can observe your algorithm dealing with randomly appeared people calling for a lift
+        3. --ui: UI Mode (Default with UI support). You can create people on any floor going to any floor by;
+		    3.a. Press and hold the left mouse button on the start floor,
+			3.b. Move the cursor the the target floor
+			3.c. Release the button
+			3.d. You can Pause the progress at any time by pressing the right mouse button
+			3.e. You can continue the progress by pressing the right mouse button again
+	
+	
     IO Scheme:
     
         The communication between the algorithm and the elevator machine is cycle based,
