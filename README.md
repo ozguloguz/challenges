@@ -38,35 +38,35 @@
         Travelling between two floors: 5 units of energy
 
     The performance of your algorithm will be calculated based on the following key performance indicators:
-	    
+        
         1. Average Elevator Wait Time: The average number of cycles people had to wait for the elevator to take them
         2. Average Extended Travel Time On Board: The average number of extra cycles people spent in the elevator to reach their destination floor,
-		   which is calculated as: Total Cycles in Elevator - ABS(Target Floor - Start Floor)
+           which is calculated as: Total Cycles in Elevator - ABS(Target Floor - Start Floor)
         3. Energy Expenditure: The total energy expenditure of the elevator (for which the quantities are detailed above)
-	
-	There are some complaints reported by residents living in buildings fitted with our elevators. These must certainly be fixed:
+    
+    There are some complaints reported by residents living in buildings fitted with our elevators. These must certainly be fixed:
 
         1. "The elevator just passed me by! It went on like I was not there!
-		   But it was going down and I was also waiting to go down! Ühü!"
-		   Emre Kantar - 30 - Businessman (Generally busy or else in a meeting)
+           But it was going down and I was also waiting to go down! Ühü!"
+           Emre Kantar - 30 - Businessman (Generally busy or else in a meeting)
 
         2. "I keep a book with me at all times so that I can read a significant amount of pages while waiting for your elevator.
-		   It changes direction like a roller coaster!"
-		   Muhammet Emin Tekin - 30 - Composer
+           It changes direction like a roller coaster!"
+           Muhammet Emin Tekin - 30 - Composer
 
         3. "We three got on at 7th floor and pressed buttons for floors 3, 2 and 1.
-		   The elevator went to the first floor first. So.. First things first? Is that it?"
-		   Berkant Gokdemir - 30 - Football Player - Manchester United FC
-		   
+           The elevator went to the first floor first. So.. First things first? Is that it?"
+           Berkant Gokdemir - 30 - Football Player - Manchester United FC
+           
         4. "I rather use the stairs. It's good for my health."
-		   Ozan Yarci - 34 - Linguist
-		   
+           Ozan Yarci - 34 - Linguist
+           
         5. "Let me tell you this: I will not pay the next electricity bill. You will!"
-		   Damla Firat - 25 - Landlord
-		   
+           Damla Firat - 25 - Landlord
+           
         6. "Someone complained about waiting too much for the elevator to come. I was also thinking the same thing." 
-		   Ali Kaan Koc - 30 - ThinkTank
-	
+           Ali Kaan Koc - 30 - ThinkTank
+    
     You will find the current algorithm in the DefaultAlgorithm.cs class.
     
     The current algorithm processes calls for the elevator in sequential order,
@@ -78,20 +78,20 @@
     Good luck.
     
     
-	NOTES:
-	
-	The OzgulOguz.ChallengeRunner executable runs in three modes:
-	
+    NOTES:
+    
+    The OzgulOguz.ChallengeRunner executable runs in three modes:
+    
         1. --run: Competition mode. Your algorithm is executed for 1M cycles and the results are reported
-		2. --rnd: Random mode (With UI support). You can observe your algorithm dealing with randomly appeared people calling for a lift
+        2. --rnd: Random mode (With UI support). You can observe your algorithm dealing with randomly appeared people calling for a lift
         3. --ui: UI Mode (Default with UI support). You can create people on any floor going to any floor by;
-		    3.a. Press and hold the left mouse button on the start floor,
-			3.b. Move the cursor the the target floor
-			3.c. Release the button
-			3.d. You can Pause the progress at any time by pressing the right mouse button
-			3.e. You can continue the progress by pressing the right mouse button again
-	
-	
+            3.a. Press and hold the left mouse button on the start floor,
+            3.b. Move the cursor the the target floor
+            3.c. Release the button
+            3.d. You can Pause the progress at any time by pressing the right mouse button
+            3.e. You can continue the progress by pressing the right mouse button again
+    
+    
     IO Scheme:
     
         The communication between the algorithm and the elevator machine is cycle based,
