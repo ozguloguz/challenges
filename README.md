@@ -64,7 +64,8 @@
         5. "Let me tell you this: I will not pay the next electricity bill. You will!"
            Damla Firat - 25 - Landlord
            
-        6. "Someone complained about waiting too much for the elevator to come. I was also thinking the same thing." 
+        6. "Someone complained about waiting too much for the elevator to come.
+           I was also thinking the same thing." 
            Ali Kaan Koc - 30 - ThinkTank
     
     You will find the current algorithm in the DefaultAlgorithm.cs class.
