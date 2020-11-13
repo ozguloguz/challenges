@@ -84,8 +84,21 @@
     The OzgulOguz.ChallengeRunner executable runs in three modes:
     
         1. --run: Competition mode. Your algorithm is executed for 1M cycles and the results are reported
-        2. --rnd: Random mode (With UI support). You can observe your algorithm dealing with randomly appeared people calling for a lift
-        3. --ui: UI Mode (Default with UI support). You can create people on any floor going to any floor by;
+
+                                                ORIGINAL ALG.    YOUR ALGORITHM   IMPROVEMENT
+                  ----------------------------  ---------------  ---------------  -----------
+                  Floors Travelled            :          442307         312556     129751
+                  Door Open/Close             :          313017         293469      19548
+                  People Served               :           99906          99906          0
+                  Avg Wait Time               :         21,2776        13,4644     7,8132
+                  Avg Extended Travel Time    :          6,8475         0,4332     6,4143
+                  Energy Expenditure          :         2524552        1968843     555709
+        
+        
+        2. --rnd: Random mode (With UI support). You can observe your algorithm dealing with
+                  randomly appearing people calling for a lift
+
+        3. --ui: UI Mode (Default mode, with UI support). You can create people on any floor going to any floor by;
             3.a. Press and hold the left mouse button on the start floor,
             3.b. Move the cursor the the target floor
             3.c. Release the button
@@ -160,38 +173,38 @@
         
           Sensory Input           Algorithm Output            Explanation
           
-              F#:12 L#:300             --                  Initialization. Total number of floors: 12, Load capacity: 300 Kilograms  
-                                                        The algorithm has started working and knows that
-                                                        the elevator is on the ground floor and its door is closed
+              F#:12 L#:300            --                  Initialization. Total number of floors: 12, Load capacity: 300 Kilograms  
+                                                          The algorithm has started working and knows that
+                                                          the elevator is on the ground floor and its door is closed
                                                         
               --:0                    --                  No events, no actions. 
                                                         
               --:0                    --                  No events, no actions. 
                                                         
               D-:5                    G+                  Someone has pressed the "Down" call button on floor 5.
-                                                        Algorithm responds with a G+ action (Go up)
+                                                          Algorithm responds with a G+ action (Go up)
                                                         
               FL:1                    --                  Floor 1 has been reached  
               
               FL:2                    --                  Floor 2 has been reached
               
-              FL:3 D+:2                --                  Floor 3 has been reached
-                                                        Also, someone has pressed the "Down" call button on floor 2.
+              FL:3 D+:2               --                  Floor 3 has been reached
+                                                          Also, someone has pressed the "Down" call button on floor 2.
                                                         
               FL:4                    --                  Floor 4 has been reached
               
               FL:5                    ST                  The elevator has reached floor 5.
-                                                        Algorithm responds with ST (Stop)
+                                                          Algorithm responds with ST (Stop)
                                                         
               --:0                    O-                  Algorithm opens the door, elevator is going down
                                                        
-              D-:5 L+:89 L+:75          CL                  The "Down" call button on floor 5 has been automatically deactivated
-                                                        Elevator load has been increased by 89 Kilograms and then by 75 Kilograms
-                                                        Which probably means that 2 people got onboard
-                                                        Algorithm closes the door
+              D-:5 L+:89 L+:75        CL                  The "Down" call button on floor 5 has been automatically deactivated
+                                                          Elevator load has been increased by 89 Kilograms and then by 75 Kilograms
+                                                          Which probably means that 2 people got onboard
+                                                          Algorithm closes the door
                                                         
               G+:0                    G-                  Floor 0 button is activated by the people onboard
-                                                        Algorithm responds with a G- action (Go down)
+                                                          Algorithm responds with a G- action (Go down)
                                                         
               FL:4                    --                  Floor 4 has been reached
               
@@ -202,13 +215,13 @@
               FL:1                    --                  Floor 1 has been reached
               
               FL:0                    ST                  Floor 0 has been reached
-                                                        Algorithm responds with ST (Stop)
+                                                          Algorithm responds with ST (Stop)
                                                         
               --:0                    O+                  Algorithm opens the door, elevator is going up
                                                         
-              G-:0 L-:89 L-:75          CL                  Floor 0 button is deactivated automatically
-                                                        Elevator load has been decreased by 89 Kilograms and then by 75 Kilograms
-                                                        Algorithm closes the door
+              G-:0 L-:89 L-:75        CL                  Floor 0 button is deactivated automatically
+                                                          Elevator load has been decreased by 89 Kilograms and then by 75 Kilograms
+                                                          Algorithm closes the door
                                                         
               --:0                    G+                  Algorithm goes up (to serve the person on the 2nd floor)
     
